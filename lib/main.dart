@@ -43,11 +43,11 @@ class _MyHomePageState extends State<MyHomePage> {
             key: Key(movieName),
             child: _buildTile('$imgPath', '$movieName'),
             onDismissed: (direction){
-              if(direction == DismissDirection.startToEnd){
+
                 setState(() {
                   movieNames.removeAt(index);
                 });
-              }
+
             },
             background: Container(
               color: Colors.red,
